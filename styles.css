@@ -1,17 +1,21 @@
 html {
     box-sizing: border-box
 }
+
 *,
 *::after,
 *::before {
     box-sizing: inherit
 }
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
 }
+
 p {
   margin: 0 0 1em;
 }
+
 .container {
   width: 1920px;
   margin: 0 auto;
@@ -25,12 +29,14 @@ p {
   padding: 2rem;
   width: 100%;
 }
+
 .picture {
   top: 0;
   left: 0;
 }
+
 .intro {
-  width: 100%;
+  width: 75%;
   margin: 55% auto 0;
   font-family: Montserrat, sans-serif;
   font-size: 10px;
@@ -39,6 +45,7 @@ p {
   color: #fff;
   text-align: center;
 }
+
 .background {
   position: absolute;
   top: 0;
@@ -51,12 +58,14 @@ p {
   background-position: left top;
   filter: brightness(90%);
 }
+
 .intro em {
   color: #3ee6bf;
   font-style: normal;
   position: relative;
   font-weight: 700;
 }
+
 .resume {
   top: 0;
   right: 0;
@@ -68,25 +77,31 @@ p {
   line-height: 1.818;
   overflow-y: scroll;
 }
+
 .part {
   width: 100%;
   margin-top: 3em;
   clear: both;
   overflow: hidden;
 }
+
 .part:first-child {
   margin-top: 0;
 }
+
 .sidebar, .main {
   float: left;
 }
+
 .sidebar {
   width: 100%;
 }
+
 .main {
-  width: 100%;
+  width: 90%;
   padding-right: 25%;
 }
+
 .tag {
   text-transform: uppercase;
   font-style: italic;
@@ -98,21 +113,21 @@ p {
 .picture {display: none;
         }
       }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-.container{ width: 50%;
-order: 1;}
-.resume { width: 50%;
-order: 0;}
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .picture { width: 50%;
+}
+  .resume { width: 50%;
+}
       }
 
-      @media screen and (min-width: 1025px) {
-        .picture { width: 40%;
-        order: 0;}
-              .tag { width: 20%;
-                order: 1;
-              }
-            .resume {
-              width: 40%;
-            order: 2;}
-          }
+ @media screen and (min-width: 1025px) {
+    .picture { width: 40%;
+        }
+     .sidebar { width: 10%;
+         }
+     .resume {
+              width: 60%;
+         }
+           }
+
