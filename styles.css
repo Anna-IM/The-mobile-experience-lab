@@ -17,7 +17,7 @@ p {
 }
 
 .container {
-  width: 1920px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -127,7 +127,7 @@ p {
      .sidebar { width: 10%;
          }
      .resume {
-              width: 60%;
+              width: 50%;
          }
            }
 
